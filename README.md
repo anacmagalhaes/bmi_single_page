@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+# IMC Single Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Single Page Application (SPA)** built with **React + Vite** to calculate the **Body Mass Index (BMI)**. The user inputs their weight and height and automatically receives the BMI value along with the corresponding classification (underweight, normal, overweight, or obesity levels).
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite
+- TypeScript
+- TailwindCSS
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Input of **weight (kg)** and **height (cm)**
+- Automatic BMI calculation
+- Classification results:
+  - Underweight
+  - Normal weight
+  - Overweight
+  - Obesity class I
+  - Obesity class II
+  - Obesity class III
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Layout
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+The interface is responsive and simple, with a purple-themed design focused on user experience.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## How to Run the Project
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/imc_single_page.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navigate to the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd imc_single_page
 ```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the project:
+
+```bash
+npm run dev
+```
+
+5. Open in the browser:
+
+```
+http://localhost:5173
+```
+
+## 📄 License
+
+This project was developed for academic purposes in the **Software Engineering 2** course for the **Information Systems program**.
