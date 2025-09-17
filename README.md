@@ -1,4 +1,4 @@
-# IMC Single Page
+# BMI Single Page
 
 A **Single Page Application (SPA)** built with **React + Vite** to calculate the **Body Mass Index (BMI)**. The user inputs their weight and height and automatically receives the BMI value along with the corresponding classification (underweight, normal, overweight, or obesity levels).
 
